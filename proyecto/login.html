@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+     <link rel="stylesheet" href="assets/css/login-st.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+     <!-- icono title -->
+     <link rel="icon" href="assets/img/logo.ico">
+    <title>Tecnodidacta</title>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <nav class="navi">
+                <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-menu-link nav-links">inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-menu-link nav-links">CRUD</a></li>
+                    <li class="nav-item"><a href="#" class="nav-menu-link nav-links"><i class="fa-solid fa-user"></i></a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <div class="main">
+            <div class="contains">
+                <section id="formulario">
+                    <div class="logo-in"></div>
+                    <form action="">
+                        <h1>TECNODIDACTA</h1>
+                        <h3> login</h3>
+                        <div>
+                            <input type="text" placeholder="Username" required="" id="username" />
+                        </div>
+                        <div>
+                            <input type="password" placeholder="Password" required="" id="password" />
+                        </div>
+                        <div>
+                            <input type="submit" class="btn-input" value="Log in" />
+
+                            <a class="ref" href="#">Te olvidaste tu contraseña? <br></a>
+                            <a  class="ref" href="#">Registrate aqui </a>  
+                        </div>
+                  </form><!-- form -->
+                </section><!-- content -->
+            </div><!-- container -->
+           
+        </div>
+        <!-- footer -->
+        <div class="footer">
+            <!-- iconos de redes -->
+            <ul class="lista">
+                <li class="lista-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x" style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x" style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x" style="color: black;"></i></a></li>
+              </ul>
+              <h5 class="footer-desc">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h5>
+              <p><a class="footer-items" href="index.html">Inicio</a><a class="footer-items" href="contacto.html">Contactate con nosotros </a><a class="footer-items" href="trabaja.html"> Te gustaria ser parte de Tecnodidacta?</a></p>
+        </div>
+    </div> 
+    
+    <script>
+    const navToggle = document.querySelector(".nav-toggle")
+    const navMenu = document.querySelector(".nav-menu")
+
+    navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible")
+    })
+    </script>
+</body>
+</html>

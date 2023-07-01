@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!-- css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/6b01f57256.js" crossorigin="anonymous"></script>
+     <!-- icono title -->
+     <link rel="icon" href="assets/img/logo.ico">
+     <script>
+        function agregarAsunto(asunto) {
+            localStorage.setItem("texto", asunto);
+        }
+    </script>
+    <title>Tecnodidacta</title>
+    <script>
+        function agregarAsunto(asunto) {
+            localStorage.setItem("texto", asunto);
+        }
+    </script>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- header -->
+        <header class="header">
+            <nav class="navi">
+                <a href="index.html"><img  class="logo animate__animated animate__lightSpeedInRight" src="assets/img/logoTecnodidacta.png" alt="tecnodidacta logo"></a>
+                <button class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-menu-link nav-links">inicio</a></li>
+                    <li class="nav-item"><a href="nosotros.html" class="nav-menu-link nav-links">sobre tecnodidacta</a></li>
+                    <li class="nav-item"><a href="contacto.html" class="nav-menu-link nav-links">contacto</a></li>
+                    <li class="nav-item"><a href="productos.html" class="nav-menu-link nav-links">CRUD</a></li>
+                    <li class="nav-item"><a href="login.html" class="nav-menu-link nav-links"><i class="fa-solid fa-user"></i></a></li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <!-- PONER ACA LOS SERVICIOS -->
+            <h1 class="servicios">Servicios Tecnodidacta</h1>
+            <p class="p-servicios">En tecnodidacta ofrecemos servicios de asesorías en el marco de la educación digital a instituciones escolares que quieran incluir de forma significativa dicho enfoque. Además contamos con servicios de cursos y talleres tanto para docentes como para niños, niñas y jóvenes.
+                Es importante mencionar que cada servicio está orientado a temas vinculados con las últimas tendencias en educación digital y que por ende, periódicamente vamos  agregando más propuestas o mejorando las ya existentes. 
+                El propósito fundamental de nuestra empresa es brindar capacitaciones cursos y asesorías que estén a la vanguardia en cuanto a actualizaciones pedagógicas y que brinden a nuestros estudiantes herramientas y potenciales capacidades para moverse con plena seguridad en el gran mundo de la Educación digital.
+            </p>
+            <article class= "grid" class="asesorias">
+                <div class="precio rel-abs">
+                    <img class= "imagen-titulo"    src="assets\img\imagenes titulos\asesorias titutlo.png" alt="docentes-titulo">
+                    <img class= "imagen-principal" src="assets\img\imagenes principales\asesorias-principal.png" alt="docentes">
+                    <a href="contacto.html"><img class= "imagen-precios" src="assets\img\imagenes precios\precios-asesorias.png" onclick="agregarAsunto('Consulta - Asesorias - Paquete Full')"  alt="docentes-precios"></a>
+                    <img class= "imagen-modalidad mod-hibrid" src="assets\img\modalidad\modalidad-asesorias.png" alt="docentes-modalidad">
+                </div>
+                
+                <div class="contenido">
+                    <div class="contenido-asesorias">
+                        <h2>Diseñamos paquetes de asesorías especialmente pensadas para cada institución.
+                            Además contamos con un paquete de servicios full que está compuesto por:</h2>
+                            <ul>
+                                <li>Entrevistas tanto presenciales como virtuales con autoridades de la escuela, para diseño de propuesta en  educación digital de acuerdo al proyecto escuela</li>
+                                <li>Presupuesto y gestión de compra de equipamiento necesario para llevar a cabo la implementación acordada.</li>
+                                <li>Capacitación de toda la planta funcional escolar.</li>
+                                <li>Consultoría a directivos en cuanto a la implementación de campo.</li>
+                                <li>Suite de aplicaciones específicas.</li>
+                            </ul>
+                    </div>
+                    
+                </div>
+            </article>
+            <article class= "grid" class="docentes">
+                <div class="precio rel-abs">
+                    <img class= "imagen-titulo"    src="assets\img\imagenes titulos\docentes titutlo.png" alt="docentes-titulo">
+                    <img class= "imagen-principal" src="assets\img\imagenes principales\docentes-principal.png" alt="docentes">
+                    <a href="contacto.html"><img class= "imagen-precios"   src="assets\img\imagenes precios\precios-general.png" onclick="agregarAsunto('Consulta - Docentes - Precios mensuales')"  alt="docentes-precios"></a>
+                    <img class= "imagen-modalidad" src="assets\img\modalidad\modalidad-docentes-1er-2do-ciclo.png" alt="docentes-modalidad">
+                </div>
+                <div class="contenido">
+                    <div id="carousel1" class="carousel slide active">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets\img\Curso herramientas digitales.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets\img\canva edu.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets\img\webinar.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </article>
+            <article  class= "grid" class="1er-ciclo">
+                <div class="precio">
+                    <div class="precio rel-abs">
+                        
+                        <img class= "imagen-titulo"    src="assets\img\imagenes titulos\1er-ciclo primaria.png" alt="1er-ciclo-titulo">
+                        <img class= "imagen-principal" src="assets\img\imagenes principales\1er-ciclo principal.png" alt="1er-ciclo">
+                        <a href="contacto.html"><img class= "imagen-precios"   src="assets\img\imagenes precios\precios-general.png" onclick="agregarAsunto('Consulta - Primer Ciclo - Precios mensuales')"  alt="1er-ciclo-precios"></a>
+                        <img class= "imagen-modalidad" src="assets\img\modalidad\modalidad-docentes-1er-2do-ciclo.png" alt="1er-ciclo-modalidad">    
+                </div>
+                </div>
+                <div class="contenido"> 
+                    <div id="carousel2" class="carousel slide active">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="contacto.html"><img src="assets\img\scratch junior.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Primer ciclo - ScratchJr')"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="contacto.html"><img src="assets\img\scratch.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Primer ciclo - Scratch')"></a>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="contacto.html"><img src="assets\img\kibo.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Primer ciclo - Kibo')"></a>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </article>
+            <article class= "grid" class="2do-ciclo">
+                <div class="precio rel-abs">
+                    <img class= "imagen-titulo"    src="assets\img\imagenes titulos\2do-ciclo titulo.png" alt="2do-ciclo-titulo">
+                    <img class= "imagen-principal" src="assets\img\imagenes principales\2do-ciclo principal.png" alt="2do-ciclo">
+                    <a href="contacto.html"><img class= "imagen-precios"   src="assets\img\imagenes precios\precios-general.png" onclick="agregarAsunto('Consulta - Segundo Ciclo - Precios mensuales')"  alt="2do-ciclo-precios"></a>
+                    <img class= "imagen-modalidad" src="assets\img\modalidad\modalidad-docentes-1er-2do-ciclo.png" alt="2do-ciclo-modalidad"> 
+                </div>
+                <div class="contenido">
+                    <div id="carousel3" class="carousel slide active">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <a href="contacto.html"><img src="assets\img\microbit-makecode.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Segundo Ciclo - Microbit + Makecode')"></a>
+                            </div>
+                            <div class="carousel-item">
+                            <a href="contacto.html"><img src="assets\img\arduino-mblock.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Segundo Ciclo - Arduino + mblock')"></a>
+                            </div>
+                            <div class="carousel-item">
+                            <a href="contacto.html"><img src="assets\img\minecraftedu.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Segundo Ciclo - Minecraft edu')"></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="contacto.html"><img src="assets\img\aulaedu.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Segundo Ciclo - Aula maker')"></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class= "grid" class="secundaria">
+                <div class="precio rel-abs">
+                    <img class= "imagen-titulo"    src="assets\img\imagenes titulos\Secundaria titulo.png" alt="secundaria-titulo">
+                    <img class= "imagen-principal" src="assets\img\imagenes principales\Secundaria principal.png" alt="secundaria-ciclo">
+                    <a href="contacto.html"><img class= "imagen-precios"   src="assets\img\imagenes precios\precios-general.png" onclick="agregarAsunto('Consulta - Secundaria - Precios mensuales')"  alt="secundaria-precios"></a>
+                    <img class= "imagen-modalidad" src="assets\img\modalidad\modalidad-secundaria.png" alt="secundaria-modalidad">
+                </div>
+                <div class="contenido">
+                    <div id="carousel4" class="carousel slide active">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <a href="contacto.html"><img src="assets\img\gdeveloped.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Secundaria - GDeveloped 5')"></a>
+                            </div>
+                            <div class="carousel-item">
+                            <a href="contacto.html"><img src="assets\img\tinkercard.jpg" class="d-block w-100" alt="..." onclick="agregarAsunto('Consulta - Secundaria - Tinkercard')"></a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <!-- footer -->
+        <div class="footer">
+            <!-- iconos de redes -->
+            <ul class="lista">
+                <li class="lista-item"><a target="_blank" href="https://"><i class="fa-brands fa-linkedin fa-2x" style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="https://github.com"><i class="fa-brands fa-github fa-2x" style="color: black;"></i></a></li>
+                <li class="lista-item"><a target="_blank" href="#"><i class="fa-brands fa-instagram fa-2x" style="color: black;"></i></a></li>
+              </ul>
+              <h5 class="footer-desc">Copyright.<i class="fa-regular fa-copyright" style="color: #090b10;"></i> Tecnodidacta</h5>
+              <p><a class="footer-items" href="index.html">Inicio</a><a class="footer-items" href="contacto.html">Contactate con nosotros </a><a class="footer-items" href="trabaja.html"> Te gustaria ser parte de Tecnodidacta?</a></p>
+        </div>
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script>
+    const navToggle = document.querySelector(".nav-toggle")
+    const navMenu = document.querySelector(".nav-menu")
+
+    navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("nav-menu_visible")
+    })
+    </script>
+
+</body>
+</html>
